@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Practical1-Intents</string>
+
+    <array name="furniture_list">
+        <item>Sofa</item>
+        <item>Dining Set</item>
+        <item>Nightstand</item>
+        <item>Chair</item>
+        <item>Desk</item>
+        <item>Dresser</item>
+        <item>Lamp</item>
+        <item>Bed</item>
+        <item>Carpet</item>
+    </array>
+
+</resources>

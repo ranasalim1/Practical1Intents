@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreen">
+
+    <TextView
+        android:id="@+id/tvOrderIntro"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="72dp"
+        android:text="Your Order:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCalculateTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="308dp"
+        android:onClick="onCalculateTotalClick"
+        android:text="Calculate Total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuantity"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <TextView
+        android:id="@+id/tvFurniture"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderIntro" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="38dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFurniture" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalculateTotal"
+        app:layout_constraintVertical_bias="0.036" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
