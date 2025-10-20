@@ -11,12 +11,11 @@
         android:id="@+id/spFurniture"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="7dp"
         android:entries="@array/furniture_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSelectFurniture" />
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
 
     <Button
         android:id="@+id/btOrder"
@@ -53,15 +52,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
-
-    <TextView
-        android:id="@+id/tvSelectFurniture"
-        android:layout_width="179dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="20dp"
-        android:text="Select Furniture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

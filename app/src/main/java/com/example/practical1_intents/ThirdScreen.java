@@ -38,6 +38,7 @@ public class ThirdScreen extends AppCompatActivity {
         double pricePerItem = 0;
 
         switch (furniture) {
+            case "Sofa": pricePerItem = 500.00; break;
             case "Dining Set": pricePerItem = 1000.50; break;
             case "Nightstand": pricePerItem = 500.99; break;
             case "Chair": pricePerItem = 899.79; break;
@@ -52,9 +53,10 @@ public class ThirdScreen extends AppCompatActivity {
         double total = pricePerItem * quantity;
 
 
-        Intent intent = new Intent(getApplicationContext(), SecondScreen.class);
-        intent.putExtra("RESULT_DATA",total);
-        startActivity(intent);
+        Intent resultIntent = new Intent();
+        resultIntent.putExtra("total", total);
+        setResult(RESULT_OK, resultIntent);
+        finish();
 
     }
 }

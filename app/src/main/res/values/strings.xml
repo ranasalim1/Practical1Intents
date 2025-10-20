@@ -2,6 +2,7 @@
     <string name="app_name">Practical1-Intents</string>
 
     <array name="furniture_list">
+        <item>Select furniture item</item>
         <item>Sofa</item>
         <item>Dining Set</item>
         <item>Nightstand</item>
